@@ -1,0 +1,20 @@
+:root {
+  --top-color: yellow;
+  --bottom-color: lightyellow;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.separator {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.separator.external {
+  background-image: url(source.svg);
+}

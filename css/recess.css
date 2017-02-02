@@ -1,0 +1,143 @@
+/* Responsive Breakpoints
+   ========================================================================== */
+/* Sub-section comment block
+   ========================================================================== */
+/* Clearfix
+  ========================================================================== */
+/* Box Model
+  ========================================================================== */
+/* Border Radius
+  ========================================================================== */
+/* Opacity
+  ========================================================================== */
+/* Center-align a block level element
+  ========================================================================== */
+/* Text overflow
+  ========================================================================== */
+/* Absolute positioned
+  ========================================================================== */
+/* Font Size
+  ========================================================================== */
+/* Cross browser inline block
+  ========================================================================== */
+/* Text replacement (instead of text-indent)
+  ========================================================================== */
+/* Line Height
+  ========================================================================== */
+/* Placeholder
+  ========================================================================== */
+/* SVG
+  ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body,
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.separator {
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.section {
+  text-align: center;
+  display: flex;
+  flex-direction: "row";
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-end; }
+
+.separator.external {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"%3E%3Cpolygon fill="%231f1f28" points="82 100 0 100 0 0 62 0"/%3E%3Cpolygon fill="%23282834" points="60 0, 100 0, 100 100, 80 100"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background-color: #f1c40f; }
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 40px;
+  z-index: 70;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: "row";
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-end; }
+
+.menu__item {
+  padding: 1rem 2rem;
+  color: #e5e8e9; }
+  .menu__item a {
+    transition: color 0.5s ease;
+    color: #e5e8e9;
+    text-decoration: none;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: 500; }
+  .menu__item.active a {
+    border-bottom: 0.125rem solid #f1c40f; }
+
+.recess-logo {
+  width: 10rem; }
+
+.section-title__header {
+  display: flex;
+  flex-direction: "row";
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  color: #e5e8e9;
+  font-size: 2rem; }
+  .section-title__header img {
+    height: 3rem;
+    margin-right: -0.5rem; }
+
+.section-title__footer {
+  display: flex;
+  flex-direction: "row";
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #f1c40f; }
+  .section-title__footer i {
+    font-size: 4rem; }
+
+.section-title__badges {
+  display: flex;
+  flex-direction: "row";
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center; }
+
+.section-description {
+  display: flex;
+  flex-direction: "row";
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  color: #e5e8e9;
+  padding: 1rem;
+  line-height: 2rem; }
+  .section-description span {
+    font-size: 1.2rem;
+    max-width: 40rem; }
+
+.badge.google {
+  width: 154px; }
+
+.fp-viewing-study .menu__item a {
+  transition: color 0.5s ease;
+  color: #1f1f28; }
+
+/*# sourceMappingURL=recess.css.map */

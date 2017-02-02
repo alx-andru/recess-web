@@ -1,0 +1,140 @@
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.separator {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.section {
+  text-align: center;
+  @include flex('row');
+  justify-content: flex-end;
+
+}
+
+.separator.external {
+  //background-image: url('../svg/source.svg');
+  @include svg($recess_base_contrast_1, $recess_base_contrast_3, 60, 80);
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+  background-color: $primary_recess;
+}
+
+#menu{
+  position:fixed;
+  top:0;
+  right:0;
+  height: 40px;
+  z-index: 70;
+  padding: 1rem;
+  margin: 0;
+  @include flex('row');
+  justify-content: flex-end;
+}
+
+.menu__item {
+  padding: 1rem 2rem;
+  color: $recess_base_1;
+
+  a {
+    transition: color 0.5s ease;
+    color: $recess_base_1;
+    text-decoration: none;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: 500;
+  }
+
+  &.active {
+    a {
+
+
+      border-bottom: 0.125rem solid $primary_recess;;
+    }
+  }
+}
+
+.recess-logo {
+  width: 10rem;
+}
+
+.section-title {
+
+
+}
+
+.section-title__header {
+  @include flex('row');
+  justify-content: center;
+
+  color: $recess_base_1;
+  font-size: 2rem;
+
+  img {
+    height: 3rem;
+    margin-right: -0.5rem;
+  }
+}
+.section-title__footer {
+  @include flex('row');
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  color: $primary_recess;
+  i {
+    font-size: 4rem;
+  }
+
+}
+.section-title__badges {
+  @include flex('row');
+  justify-content: center;
+}
+
+.section-description {
+  @include flex('row');
+  justify-content: center;
+  color: $recess_base_1;
+  padding: 1rem;
+  line-height: 2rem;
+  span {
+    font-size: 1.2rem;
+    max-width: 40rem;
+  }
+}
+
+.badge {
+  &.apple {
+
+  }
+
+  &.google {
+    width: 154px;
+  }
+}
+
+.fp-viewing-app {
+
+}
+
+.fp-viewing-study .menu__item {
+  a {
+    transition: color 0.5s ease;
+    color: $recess_base_contrast_1;
+  }
+
+}
