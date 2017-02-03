@@ -3,10 +3,10 @@ $(document).ready(function() {
     //Navigation
     menu: '#menu',
     lockAnchors: false,
-    anchors: ['app', 'study', 'agreement', 'team'],
-    navigation: true,
+    anchors: ['app', 'study', 'team', 'questions'],
+    navigation: false,
     navigationPosition: 'right',
-    navigationTooltips: ['firstSlide', 'secondSlide'],
+    //navigationTooltips: [],
     showActiveTooltip: false,
     slidesNavigation: false,
     slidesNavPosition: 'bottom',
@@ -14,7 +14,7 @@ $(document).ready(function() {
     //Scrolling
     css3: true,
     scrollingSpeed: 700,
-    autoScrolling: true,
+    autoScrolling: false,
     fitToSection: true,
     fitToSectionDelay: 1500,
     scrollBar: false,
@@ -47,13 +47,13 @@ $(document).ready(function() {
     //Design
     controlArrows: true,
     verticalCentered: true,
-    sectionsColor: ['#ccc', '#fff'],
-    paddingTop: '3em',
-    paddingBottom: '10px',
+    sectionsColor: [],
+    paddingTop: '0',
+    paddingBottom: '0',
     fixedElements: '#header, .footer',
     responsiveWidth: 0,
     responsiveHeight: 0,
-    responsiveSlides: false,
+    responsiveSlides: true,
 
     //Custom selectors
     sectionSelector: '.section',

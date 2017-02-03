@@ -10,6 +10,10 @@ html {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .separator {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -24,17 +28,28 @@ html {
 
 .separator.external {
   //background-image: url('../svg/source.svg');
-  @include svg($recess_base_contrast_1, $recess_base_contrast_3, 60, 80);
+  @include svg($recess_base_contrast_1, $recess_base_contrast_3, 40, 80);
 }
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span{
+.separator.bright {
+  //background-image: url('../svg/source.svg');
+  @include svg($recess_base_1, $recess_base_2, 80, 30);
+}
+
+.separator.brighter {
+  //background-image: url('../svg/source.svg');
+  @include svg($recess_base_1, $recess_base_1, 30, 0);
+}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
   background-color: $primary_recess;
 }
 
-#menu{
-  position:fixed;
-  top:0;
-  right:0;
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
   height: 40px;
   z-index: 70;
   padding: 1rem;
@@ -59,8 +74,7 @@ html {
   }
 
   &.active {
-    a {
-
+    a, a:hover, a:focus, a:active, a:visited {
 
       border-bottom: 0.125rem solid $primary_recess;;
     }
@@ -72,7 +86,6 @@ html {
 }
 
 .section-title {
-
 
 }
 
@@ -88,18 +101,23 @@ html {
     margin-right: -0.5rem;
   }
 }
+
 .section-title__footer {
   @include flex('row');
   justify-content: center;
   width: 100%;
   position: absolute;
-  bottom:0;
-  color: $primary_recess;
+  bottom: 0;
+  a, a:hover, a:focus, a:active, a:visited {
+    color: $primary_recess;
+  }
+
   i {
     font-size: 4rem;
   }
 
 }
+
 .section-title__badges {
   @include flex('row');
   justify-content: center;
@@ -131,10 +149,146 @@ html {
 
 }
 
-.fp-viewing-study .menu__item {
+.fp-viewing-study .menu__item ,
+.fp-viewing-team .menu__item,
+.fp-viewing-questions .menu__item {
   a {
     transition: color 0.5s ease;
     color: $recess_base_contrast_1;
+  }
+
+}
+
+.study {
+  //background-color: $nephritis;
+}
+
+.theStudy {
+  padding: 0 0 0 0;
+  //height: 40rem;
+
+  @include flex('row');
+
+}
+
+.team {
+  @include flex('row');
+  background-color: $white;
+}
+
+
+
+p {
+  line-height: 1.4rem;
+}
+
+.description {
+  flex: auto;
+  //background-color: $amethyst;
+  width: 10rem;
+  min-width: 12rem;
+  h1 {
+    width: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+  }
+  .subtitle {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1rem;
+    padding: 1rem 0 0 2rem;
+  }
+  p {
+    padding: 0 2rem 0 2rem;
+    min-width: 14rem;
+    max-width: 14rem;
+    text-align: left;
+    color: $concrete;
+
+  }
+}
+
+.stages {
+  flex: auto;
+  align-self: flex-end;
+  //width: 5rem;
+  max-width: 20rem;
+  background-color: $primary_recess;
+
+  section {
+    color: $recess_base_contrast_2;
+    padding: 2rem;
+    text-align: left;
+  }
+
+}
+
+.preview {
+  //background-color: $amethyst;
+  flex-grow: 1;
+  @include flex('row');
+  justify-content: space-around;
+  img {
+    width: 10rem;
+    @include card(3);
+  }
+}
+
+.theTeam {
+  @include flex('row');
+  //background-color: $alizarin;
+}
+
+.ethics {
+  flex: auto;
+  //background-color: $amethyst;
+  width: 10rem;
+  min-width: 12rem;
+  h1 {
+    width: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+  }
+  .subtitle {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1rem;
+    padding: 1rem 0 0 2rem;
+  }
+  p {
+    padding: 0 2rem 0 2rem;
+    min-width: 14rem;
+    max-width: 14rem;
+    text-align: left;
+    color: $concrete;
+
+    img {
+      width: 20rem;
+    }
+
+  }
+}
+
+.members {
+  @include flex('row');
+  align-self: flex-end;
+  //width: 5rem;
+  max-width: 40rem;
+  background-color: $recess_base_contrast_2;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  section {
+    color: $recess_base_3;
+    padding: 1rem;
+    text-align: left;
+    width: 18rem;
+    //background-color: $emerald;
+    height: 8rem;
   }
 
 }
