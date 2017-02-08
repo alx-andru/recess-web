@@ -39,6 +39,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+*, * * {
+  box-sizing: border-box; }
+
 .separator {
   background-repeat: no-repeat;
   background-size: 100% 100%; }
@@ -262,5 +265,12 @@ p {
     text-align: left;
     width: 18rem;
     height: 8rem; }
+
+.policy {
+  background-color: #f1c40f;
+  padding: 2rem; }
+  .policy div {
+    background-color: #fefefe;
+    padding: 2rem; }
 
 /*# sourceMappingURL=recess.css.map */
