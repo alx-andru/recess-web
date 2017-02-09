@@ -147,6 +147,31 @@ h1, h2, h3, h4, h5, h6 {
   .badge .google {
     width: 154px; }
 
+.features {
+  padding: 1rem 0 0 0; }
+  .features h1 {
+    width: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid #f1c40f;
+    color: #24242f; }
+
+.features-description__subtitle {
+  color: #869398;
+  padding: 0 0 0 1rem; }
+
+.features-description__short {
+  color: #869398;
+  padding: 0 0 0 1rem;
+  max-width: 10rem;
+  line-height: 1.4rem; }
+
+.preview {
+  max-width: 320px; }
+  .preview img {
+    max-width: 10rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19); }
+
 /**
 
 

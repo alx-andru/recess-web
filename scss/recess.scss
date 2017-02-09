@@ -81,7 +81,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem 0 0 0;
   text-align: center;
 
-
   color: $recess_base_1;
 
   section {
@@ -105,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro__download {
   display: none;
 
-  @media (min-width : 376px) {
+  @media (min-width: 376px) {
     display: block;
     max-width: 20rem;
 
@@ -122,14 +121,12 @@ h1, h2, h3, h4, h5, h6 {
 
   }
 
-
-
 }
 
 .intro__down {
 
   position: absolute;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   a {
     color: $primary_recess;
@@ -164,6 +161,42 @@ h1, h2, h3, h4, h5, h6 {
   & .google {
 
     width: 154px;
+  }
+}
+
+.features {
+  padding: 1rem 0 0 0;
+
+  h1 {
+    width: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+  }
+}
+
+.features-description__subtitle {
+  color: $recess_font_base;
+  padding: 0 0 0 1rem;
+
+}
+
+.features-description__short {
+  color: $recess_font_base;
+  padding: 0 0 0 1rem;
+  max-width: 10rem;
+  line-height: 1.4rem;
+}
+
+.preview {
+  //background-color: $amethyst;
+
+
+  max-width: 320px;
+  img {
+    max-width: 10rem;
+    @include card(3);
   }
 }
 
