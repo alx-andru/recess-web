@@ -98,26 +98,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__download {
-  max-width: 20rem;
+  display: none;
+  @media (min-width : 361px) {
+    max-width: 20rem;
 
-  margin: 0 auto;
-  padding: 0.5rem 0;
-  & .badge {
-    width: 50%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    & .badge {
+      width: 50%;
 
-    float: left;
-    &:after {
-      clear: both;
+      float: left;
+      &:after {
+        clear: both;
+      }
     }
+
   }
+
 
 
 }
 
 .intro__down {
-  @media (max-width : 320px) {
-    display: none;
-  }
+
   position: absolute;
   bottom:0;
   width: 100%;

@@ -109,22 +109,22 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 40rem; }
 
 .intro__download {
-  max-width: 20rem;
-  margin: 0 auto;
-  padding: 0.5rem 0; }
-  .intro__download .badge {
-    width: 50%;
-    float: left; }
-    .intro__download .badge:after {
-      clear: both; }
+  display: none; }
+  @media (min-width: 361px) {
+    .intro__download {
+      max-width: 20rem;
+      margin: 0 auto;
+      padding: 0.5rem 0; }
+      .intro__download .badge {
+        width: 50%;
+        float: left; }
+        .intro__download .badge:after {
+          clear: both; } }
 
 .intro__down {
   position: absolute;
   bottom: 0;
   width: 100%; }
-  @media (max-width: 320px) {
-    .intro__down {
-      display: none; } }
   .intro__down a {
     color: #f1c40f; }
     .intro__down a i {
