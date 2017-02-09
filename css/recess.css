@@ -237,7 +237,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f1c40f;
   background-color: #282834;
   background: -webkit-linear-gradient(70deg, #e5e8e9 50%, #f1f3f3 50%);
-  background: linear-gradient(70deg, #e5e8e9 50%, #f1f3f3 50%); }
+  background: linear-gradient(70deg, #e5e8e9 50%, #f1f3f3 50%);
+  padding: 2rem 0 0 0; }
 
 .team__headline {
   max-width: 50rem;
@@ -261,9 +262,15 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   width: 100%;
   padding: 1rem; }
+  .team-members__member p {
+    text-align: left;
+    max-width: 18rem; }
   @media (min-width: 500px) {
     .team-members__member {
-      width: 50%; } }
+      width: 50%; }
+      .team-members__member p {
+        text-align: left;
+        max-width: 4rem; } }
   @media (min-width: 720px) {
     .team-members__member {
       width: 33%; } }
@@ -283,9 +290,6 @@ h1, h2, h3, h4, h5, h6 {
       border-color: #57068C; }
     .team-members__member h2.public-health {
       border-color: #007f8a; }
-  .team-members__member p {
-    text-align: left;
-    max-width: 8rem; }
 
 /**
 
