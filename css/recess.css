@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro__download {
   max-width: 20rem;
   margin: 0 auto;
-  padding: 2rem 0; }
+  padding: 0.5rem 0; }
   .intro__download .badge {
     width: 50%;
     float: left; }
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .recess-logo {
   min-width: 3rem;
-  max-width: 10rem;
+  max-width: 9rem;
   margin: 1rem; }
 
 .badge {
