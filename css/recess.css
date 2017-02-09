@@ -122,6 +122,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
   width: 100%; }
+  @media (max-width: 320px) {
+    .intro__down {
+      display: none; } }
   .intro__down a {
     color: #f1c40f; }
     .intro__down a i {
