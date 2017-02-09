@@ -29,6 +29,43 @@
 /* SVG
   ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+::selection {
+  background: #f1c40f;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+.hidden {
+  display: none !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+a, a:hover, a:link, a:visited {
+  text-decoration: none;
+  color: #282834; }
+
 body,
 html {
   height: 100%;
@@ -42,35 +79,108 @@ h1, h2, h3, h4, h5, h6 {
 *, * * {
   box-sizing: border-box; }
 
+#menu {
+  background: none;
+  position: absolute;
+  top: 0; }
+
+.intro {
+  height: 100%;
+  width: 100%;
+  max-height: 48rem;
+  max-width: 100%;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"%3E%3Cpolygon fill="%231f1f28" points="82 100 0 100 0 0 42 0"/%3E%3Cpolygon fill="%23282834" points="40 0, 100 0, 100 100, 80 100"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  color: #e5e8e9; }
+  .intro section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto; }
+
+.intro__description {
+  max-width: 35rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin: 0 auto; }
+  .intro__description span {
+    max-width: 40rem; }
+
+.intro__download {
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 2rem 0; }
+  .intro__download .badge {
+    width: 50%;
+    float: left; }
+    .intro__download .badge:after {
+      clear: both; }
+
+.intro__down {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .intro__down a {
+    color: #f1c40f; }
+    .intro__down a i {
+      font-size: 4rem;
+      line-height: 0rem; }
+
+.recess-logo {
+  min-width: 3rem;
+  max-width: 10rem;
+  margin: 1rem; }
+
+.badge {
+  height: 4rem;
+  line-height: 4rem; }
+  .badge img {
+    display: inline-block;
+    vertical-align: middle; }
+  .badge .google {
+    width: 154px; }
+
+/**
+
+
 .separator {
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+}
 
 .section {
   text-align: center;
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
-  justify-content: flex-end; }
+  @include flex('row');
+  justify-content: flex-end;
+
+}
 
 .separator.external {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"%3E%3Cpolygon fill="%231f1f28" points="82 100 0 100 0 0 42 0"/%3E%3Cpolygon fill="%23282834" points="40 0, 100 0, 100 100, 80 100"/%3E%3C/svg%3E');
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  //background-image: url('../svg/source.svg');
+  background-color: $recess_base_contrast_1;
+
+
+
+  @include svg($recess_base_contrast_1, $recess_base_contrast_3, 40, 80);
+
+}
 
 .separator.bright {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"%3E%3Cpolygon fill="%23e5e8e9" points="32 100 0 100 0 0 82 0"/%3E%3Cpolygon fill="%23f1f3f3" points="80 0, 100 0, 100 100, 30 100"/%3E%3C/svg%3E');
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  //background-image: url('../svg/source.svg');
+  @include svg($recess_base_1, $recess_base_2, 80, 30);
+}
 
 .separator.brighter {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"%3E%3Cpolygon fill="%23e5e8e9" points="2 100 0 100 0 0 32 0"/%3E%3Cpolygon fill="%23e5e8e9" points="30 0, 100 0, 100 100, 0 100"/%3E%3C/svg%3E');
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  //background-image: url('../svg/source.svg');
+  @include svg($recess_base_1, $recess_base_1, 30, 0);
+}
+
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background-color: #f1c40f; }
+  background-color: $primary_recess;
+}
 
 #menu {
   position: fixed;
@@ -80,197 +190,253 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 70;
   padding: 1rem;
   margin: 0;
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
-  justify-content: flex-end; }
+  @include flex('row');
+  justify-content: flex-end;
+}
 
 .menu__item {
   padding: 1rem 2rem;
-  color: #e5e8e9; }
-  .menu__item a {
+  color: $recess_base_1;
+
+  a {
     transition: color 0.5s ease;
-    color: #e5e8e9;
+    color: $recess_base_1;
     text-decoration: none;
     line-height: 2rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    font-weight: 500; }
-  .menu__item.active a, .menu__item.active a:hover, .menu__item.active a:focus, .menu__item.active a:active, .menu__item.active a:visited {
-    border-bottom: 0.125rem solid #f1c40f; }
+    font-weight: 500;
+  }
+
+  &.active {
+    a, a:hover, a:focus, a:active, a:visited {
+
+      border-bottom: 0.125rem solid $primary_recess;;
+    }
+  }
+}
 
 .recess-logo {
-  width: 10rem; }
+  width: 10rem;
+}
+
+.section-title {
+
+}
 
 .section-title__header {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
+  @include flex('row');
   justify-content: center;
-  color: #e5e8e9;
-  font-size: 2rem; }
-  .section-title__header img {
+
+  color: $recess_base_1;
+  font-size: 2rem;
+
+  img {
     height: 3rem;
-    margin-right: -0.5rem; }
+    margin-right: -0.5rem;
+  }
+}
 
 .section-title__footer {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
+  @include flex('row');
   justify-content: center;
   width: 100%;
   position: absolute;
-  bottom: 0; }
-  .section-title__footer a, .section-title__footer a:hover, .section-title__footer a:focus, .section-title__footer a:active, .section-title__footer a:visited {
-    color: #f1c40f; }
-  .section-title__footer i {
-    font-size: 4rem; }
+  bottom: 0;
+  a, a:hover, a:focus, a:active, a:visited {
+    color: $primary_recess;
+  }
+
+  i {
+    font-size: 4rem;
+  }
+
+}
 
 .section-title__badges {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
-  justify-content: center; }
+  @include flex('row');
+  justify-content: center;
+}
 
 .section-description {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
+  @include flex('row');
   justify-content: center;
-  color: #e5e8e9;
+  color: $recess_base_1;
   padding: 1rem;
-  line-height: 2rem; }
-  .section-description span {
+  line-height: 2rem;
+  span {
     font-size: 1.2rem;
-    max-width: 40rem; }
+    max-width: 40rem;
+  }
+}
 
-.badge.google {
-  width: 154px; }
+.badge {
+  &.apple {
 
-.fp-viewing-study .menu__item a,
-.fp-viewing-team .menu__item a,
-.fp-viewing-questions .menu__item a {
-  transition: color 0.5s ease;
-  color: #1f1f28; }
+  }
+
+  &.google {
+    width: 154px;
+  }
+}
+
+.fp-viewing-app {
+
+}
+
+.fp-viewing-study .menu__item ,
+.fp-viewing-team .menu__item,
+.fp-viewing-questions .menu__item {
+  a {
+    transition: color 0.5s ease;
+    color: $recess_base_contrast_1;
+  }
+
+}
+
+.study {
+  //background-color: $nephritis;
+}
 
 .theStudy {
   padding: 0 0 0 0;
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between; }
+  //height: 40rem;
+
+  @include flex('row');
+
+}
 
 .team {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fefefe; }
+  @include flex('row');
+  background-color: $white;
+}
+
+
 
 p {
-  line-height: 1.4rem; }
+  line-height: 1.4rem;
+}
 
 .description {
   flex: auto;
+  //background-color: $amethyst;
   width: 10rem;
-  min-width: 12rem; }
-  .description h1 {
+  min-width: 12rem;
+  h1 {
     width: 4rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 0.25rem solid #f1c40f;
-    color: #24242f; }
-  .description .subtitle {
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+  }
+  .subtitle {
     font-weight: 700;
     margin: 0;
     font-size: 1rem;
-    padding: 1rem 0 0 2rem; }
-  .description p {
+    padding: 1rem 0 0 2rem;
+  }
+  p {
     padding: 0 2rem 0 2rem;
     min-width: 14rem;
     max-width: 14rem;
     text-align: left;
-    color: #95a5a6; }
+    color: $concrete;
+
+  }
+}
 
 .stages {
   flex: auto;
   align-self: flex-end;
+  //width: 5rem;
   max-width: 20rem;
-  background-color: #f1c40f; }
-  .stages section {
-    color: #24242f;
+  background-color: $primary_recess;
+
+  section {
+    color: $recess_base_contrast_2;
     padding: 2rem;
-    text-align: left; }
+    text-align: left;
+  }
+
+}
 
 .preview {
+  //background-color: $amethyst;
   flex-grow: 1;
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
-  justify-content: space-around; }
-  .preview img {
+  @include flex('row');
+  justify-content: space-around;
+  img {
     width: 10rem;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19); }
+    @include card(3);
+  }
+}
 
 .theTeam {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between; }
+  @include flex('row');
+  //background-color: $alizarin;
+}
 
 .ethics {
   flex: auto;
+  //background-color: $amethyst;
   width: 10rem;
-  min-width: 12rem; }
-  .ethics h1 {
+  min-width: 12rem;
+  h1 {
     width: 4rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 0.25rem solid #f1c40f;
-    color: #24242f; }
-  .ethics .subtitle {
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+  }
+  .subtitle {
     font-weight: 700;
     margin: 0;
     font-size: 1rem;
-    padding: 1rem 0 0 2rem; }
-  .ethics p {
+    padding: 1rem 0 0 2rem;
+  }
+  p {
     padding: 0 2rem 0 2rem;
     min-width: 14rem;
     max-width: 14rem;
     text-align: left;
-    color: #95a5a6; }
-    .ethics p img {
-      width: 20rem; }
+    color: $concrete;
+
+    img {
+      width: 20rem;
+    }
+
+  }
+}
 
 .members {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-  justify-content: space-between;
+  @include flex('row');
   align-self: flex-end;
+  //width: 5rem;
   max-width: 40rem;
-  background-color: #24242f;
+  background-color: $recess_base_contrast_2;
   flex-wrap: wrap;
-  padding: 1rem; }
-  .members section {
-    color: #ffffff;
+  padding: 1rem;
+
+  section {
+    color: $recess_base_3;
     padding: 1rem;
     text-align: left;
     width: 18rem;
-    height: 8rem; }
+    //background-color: $emerald;
+    height: 8rem;
+  }
+
+}
 
 .policy {
-  background-color: #f1c40f;
-  padding: 2rem; }
-  .policy div {
-    background-color: #fefefe;
-    padding: 2rem; }
+  background-color: $primary_recess;
+  padding: 2rem;
+  div {
+    background-color: $white;
+    padding: 2rem;
 
-/*# sourceMappingURL=recess.css.map */
+  }
+}
+
+**/

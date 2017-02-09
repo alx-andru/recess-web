@@ -5,6 +5,14 @@
   <meta charset="UTF-8"/>
   <title>Recess</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-itunes-app" content="app-id=370144476"/>
+  <meta name="google-play-app" content="app-id=ru.hh.android">
+
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-TileImage" content="img/mstile-144x144.png?v=pgrWx6YKv4">
+  <meta name="msapplication-config" content="img/browserconfig.xml?v=pgrWx6YKv4">
+  <meta name="theme-color" content="#f1c40f">
 
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png?v=pgrWx6YKv4">
   <link rel="icon" type="image/png" href="img/favicon-32x32.png?v=pgrWx6YKv4" sizes="32x32">
@@ -13,20 +21,21 @@
   <link rel="mask-icon" href="img/safari-pinned-tab.svg?v=pgrWx6YKv4" color="#5bbad5">
   <link rel="shortcut icon" href="img/favicon.ico?v=pgrWx6YKv4">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="msapplication-TileImage" content="img/mstile-144x144.png?v=pgrWx6YKv4">
-  <meta name="msapplication-config" content="img/browserconfig.xml?v=pgrWx6YKv4">
-  <meta name="theme-color" content="#f1c40f">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css"/>
+  <link rel="stylesheet" href="css/smart-app-banner.css"/>
   <link rel="stylesheet" href="css/recess.css"/>
+
+  <!--
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css"/>
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/jquery.easings.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/scrolloverflow.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
-
+  -->
+  <script src="js/smart-app-banner.js"></script>
   <script src="js/recess.js"></script>
 
 
@@ -34,13 +43,60 @@
 
 <body>
 
-<section id="menu">
+<nav id="menu" class="hidden">
   <div data-menuanchor="app" class="menu__item active"><a href="#app">App</a></div>
   <div data-menuanchor="study" class="menu__item"><a href="#study">Study</a></div>
   <div data-menuanchor="team" class="menu__item"><a href="#team">Team</a></div>
   <div data-menuanchor="questions" class="menu__item"><a href="#team">FAQ</a></div>
-</section>
+</nav>
 
+
+<article class="intro">
+  <header>
+    <svg class="recess-logo" viewBox="0 0 200 200">
+      <defs>
+        <pattern id="squircle" patternUnits="userSpaceOnUse" width="200" height="200">
+          <image xlink:href="./img/recess-logo.png" x="0" y="0" width="200" height="200"/>
+        </pattern>
+      </defs>
+
+      <path d="M100,200c43.8,0,68.2,0,84.1-15.9C200,168.2,200,143.8,200,100s0-68.2-15.9-84.1C168.2,0,143.8,0,100,0S31.8,0,15.9,15.9C0,31.8,0,56.2,0,100s0,68.2,15.9,84.1C31.8,200,56.2,200,100,200z"
+            fill="url(#squircle)"/>
+    </svg>
+  </header>
+
+  <section>
+    <div class="intro__description">
+      Recess is a research project at the <span class="uw">University&nbsp;of&nbsp;Waterloo</span>
+      led by the <span class="cs">School&nbsp;of&nbsp;Computer&nbsp;Science</span>
+      and <span class="kine">Department&nbsp;of&nbsp;Kinesiology</span> to promote physical activity.
+    </div>
+  </section>
+
+  <section>
+    <div class="intro__download clearfix">
+      <div class="badge">
+        <img class="apple" src="img/app-store-badge.svg"/>
+      </div>
+      <div class="badge">
+        <img class="google" src="img/google-play-badge.png"/>
+      </div>
+    </div>
+  </section>
+
+  <footer class="intro__down">
+    <a href="#study">
+      <i class="material-icons md-48">keyboard_arrow_down</i>
+    </a>
+  </footer>
+
+</article>
+
+<article class="features">
+  FEATURES
+</article>
+
+<!--
 <div id="fullpage">
   <div class="section separator external">
 
@@ -194,11 +250,23 @@
       ceo@uwaterloo.ca.</p>
     <p>
 
+      What is the recess study?
+      Why is the study being done?
+      Who will oversee the study?
+      Who is eligible to participate in the study?
+      ARE THERE ANY RISKS IN PARTICIPATING IN THE STUDY?
+      WHAT DATA WILL BE COLLECTED AS PART OF THE STUDY?
+      HOW WILL THE STUDY DATA BE USED?
+      WHAT WILL I NEED TO DO IF I PARTICIPATE?
+      HOW WILL MY PRIVACY BE SAFEGUARDED?
+      CAN I WITHDRAW/OPT-OUT AFTER ENROLLING?
+      WHO CAN I CONTACT ABOUT THIS STUDY?
 
 
     </p>
   </div>
 </div>
+-->
 
 
 </body>
