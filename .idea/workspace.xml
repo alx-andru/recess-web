@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf75a2ee-7621-43a2-89f8-bdd423d42282" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/recess.css" afterPath="$PROJECT_DIR$/css/recess.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/recess.scss" afterPath="$PROJECT_DIR$/scss/recess.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/recess.js" afterPath="$PROJECT_DIR$/js/recess.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -25,7 +23,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.61821973">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="135">
@@ -83,11 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="recess.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="recess.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/recess.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -185,13 +183,13 @@
         <option value="$PROJECT_DIR$/scss/mixins.scss" />
         <option value="$PROJECT_DIR$/policy.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/js/recess.js" />
         <option value="$PROJECT_DIR$/img/recess-app-icon.svg" />
         <option value="$PROJECT_DIR$/humans.txt" />
         <option value="$PROJECT_DIR$/robots.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scss/recess.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/recess.js" />
       </list>
     </option>
   </component>
@@ -359,12 +357,12 @@
       <workItem from="1486339227833" duration="863000" />
       <workItem from="1486524760152" duration="747000" />
       <workItem from="1486560650852" duration="78000" />
-      <workItem from="1486642436446" duration="8489000" />
+      <workItem from="1486642436446" duration="8757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26133000" />
+    <option name="totallyTimeSpent" value="26401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -783,14 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/recess.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/recess-app-icon.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -868,6 +858,14 @@
             <element signature="e#2726#2732#0" expanded="true" />
             <element signature="e#2734#2740#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/recess.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
