@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   height: 100%;
   width: 100%;
-  max-height: 32rem;
+  max-height: 34rem;
   max-width: 100%;
   background-color: $recess_base_contrast_3;
   background: -webkit-linear-gradient(70deg, $recess_base_contrast_1 50%, $recess_base_contrast_3 50%);
@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2rem;
   font-size: 1.2rem;
   margin: 0 auto;
+
   span {
     max-width: 40rem;
   }
@@ -110,6 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 
     margin: 0 auto;
     padding: 0.5rem 0;
+
     & .badge {
       width: 50%;
 
@@ -167,6 +169,12 @@ h1, h2, h3, h4, h5, h6 {
 .features {
   padding: 1rem 0 0 0;
 
+  max-width: 50rem;
+
+  @media (min-width: 50rem) {
+   margin: 0 auto;
+  }
+
   h1 {
     width: 4rem;
     padding-left: 1rem;
@@ -174,6 +182,25 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 0.25rem solid $primary_recess;
     color: $recess_base_contrast_2;
   }
+}
+
+.visual {
+  display: none;
+  @media (min-width: 470px) {
+    display: block;
+    //background-color: $recess_base_1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+  }
+}
+
+.features__description {
+  position: relative;
 }
 
 .features-description__subtitle {
@@ -185,18 +212,143 @@ h1, h2, h3, h4, h5, h6 {
 .features-description__short {
   color: $recess_font_base;
   padding: 0 0 0 1rem;
-  max-width: 10rem;
+  max-width: 20rem;
   line-height: 1.4rem;
 }
 
 .preview {
   //background-color: $amethyst;
 
-
   max-width: 320px;
   img {
     max-width: 10rem;
     @include card(3);
+  }
+}
+
+.features__activity,
+.features__challenge,
+.features__chat {
+  padding: 1rem 0 0 0;
+  text-align: center;
+
+
+  h1 {
+    width: 20rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+    text-align: left;
+  }
+
+  h2 {
+    width: 20rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: darken($recess_font_base, 10%);
+
+  }
+  p {
+    color: $recess_font_base;
+    padding: 2rem 1rem 0 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .image {
+    padding: 2rem;
+    img {
+      max-width: 20rem;
+      width: 100%;
+      @include card(3);
+    }
+  }
+
+}
+
+
+.team {
+  text-align: center;
+  background-color: $primary_recess;
+  background-color: $recess_base_contrast_3;
+  background: -webkit-linear-gradient(70deg, $recess_base_1 50%, $recess_base_2 50%);
+  background: linear-gradient(70deg, $recess_base_1 50%, $recess_base_2 50%);
+
+}
+
+.team__headline {
+  max-width: 50rem;
+  margin: 0 auto;
+  h1 {
+    width: 15rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+    text-align: left;
+  }
+}
+
+.team__members {
+  padding: 2rem;
+}
+.waterloo-logo {
+  img {
+    max-width: 20rem;
+  }
+}
+.team-members__member {
+  text-align: left;
+  float: left;
+  width: 100%;
+  padding: 1rem;
+
+
+
+  @media (min-width: 500px) {
+    width: 50%;
+  }
+
+  @media (min-width: 720px) {
+    width: 33%;
+  }
+
+  @media (min-width: 850px) {
+    width: 25%;
+  }
+
+
+
+
+  h2 {
+    width: 3rem;
+    height: 4.5rem;
+    line-height: 2rem;
+    border-bottom: 0.25rem solid $primary_recess;
+
+    &.kinesiology {
+      border-color: $uw_kinesiology;
+    }
+
+    &.computer-science {
+      border-color: $uw_cs;
+    }
+
+    &.mechanical-engineering {
+      border-color: $uw_mechanical_engineering;
+    }
+
+    &.public-health {
+      border-color: $uw_public_health;
+    }
+
+
+  }
+
+  p {
+    text-align: left;
+    max-width: 8rem;
   }
 }
 
