@@ -1,4 +1,4 @@
-/**
+
 new SmartBanner({
   daysHidden: 15,
   daysReminder: 90,
@@ -20,4 +20,3 @@ new SmartBanner({
   // , icon: '' // full path to icon image if not using website icon image
   // , force: 'ios' // Uncomment for platform emulation
 });
- */

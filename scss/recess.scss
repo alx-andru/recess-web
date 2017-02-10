@@ -15,10 +15,7 @@ hr {
   margin: 1em 0;
   padding: 0;
 
-
 }
-
-
 
 fieldset {
   border: 0;
@@ -375,8 +372,6 @@ h1, h2, h3, h4, h5, h6 {
 .info__content {
   max-width: 50rem;
 
-
-
   @media (min-width: 50rem) {
     margin: 0 auto;
   }
@@ -419,7 +414,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 .faq__headline {
   h1 {
     width: 4rem;
@@ -454,14 +448,13 @@ h1, h2, h3, h4, h5, h6 {
     color: $primary_recess;
     padding: 0 2rem;
 
-
     i {
       font-size: 1.4rem;
       color: $primary_recess;
-        display: inline-block;
-        height: 2rem;
-        vertical-align: middle;
-        line-height: 1.8rem;
+      display: inline-block;
+      height: 2rem;
+      vertical-align: middle;
+      line-height: 1.8rem;
 
     }
     a {
@@ -469,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
 
       display: inline-block;
       font-size: 1rem;
-      line-height:2rem;
+      line-height: 2rem;
       &:hover {
         color: $recess_base_1;
       }
@@ -479,5 +472,16 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.policy {
+  background-color: $primary_recess;
+  padding: 2rem;
+}
 
+.agreement {
+  background-color: $recess_base_2;
+  padding: 2rem;
+}
 
+.panel-heading > i {
+  vertical-align: middle !important;
+}

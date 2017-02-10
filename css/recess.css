@@ -424,3 +424,14 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 2rem; }
       .footer__content .social-media a:hover {
         color: #e5e8e9; }
+
+.policy {
+  background-color: #f1c40f;
+  padding: 2rem; }
+
+.agreement {
+  background-color: #f1f3f3;
+  padding: 2rem; }
+
+.panel-heading > i {
+  vertical-align: middle !important; }

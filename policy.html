@@ -1,38 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+
 <head>
   <meta charset="UTF-8"/>
   <title>Recess</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-itunes-app" content="app-id=370144476"/>
+  <meta name="google-play-app" content="app-id=com.nintendo.zaba">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png?v=pgrWx6YKv4">
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png?v=pgrWx6YKv4" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon-16x16.png?v=pgrWx6YKv4" sizes="16x16">
-  <link rel="manifest" href="img/manifest.json?v=pgrWx6YKv4">
-  <link rel="mask-icon" href="img/safari-pinned-tab.svg?v=pgrWx6YKv4" color="#5bbad5">
-  <link rel="shortcut icon" href="img/favicon.ico?v=pgrWx6YKv4">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="msapplication-TileImage" content="img/mstile-144x144.png?v=pgrWx6YKv4">
   <meta name="msapplication-config" content="img/browserconfig.xml?v=pgrWx6YKv4">
   <meta name="theme-color" content="#f1c40f">
 
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:site" content="@RecessStudy">
+  <meta name="twitter:creator" content="@alexG0G">
+  <meta name="twitter:text:title" content="Recess Study">
+  <meta name="twitter:description" content="A research project at the University of Waterloo to measure behavioural change in fitness through social engagement.">
+  <meta name="twitter:app:country" content="CA">
+  <meta name="twitter:app:name:iphone" content="Recess">
+  <meta name="twitter:app:id:iphone" content="1196128038">
+  <meta name="twitter:app:url:iphone" content="recess://">
+  <meta name="twitter:app:name:ipad" content="Recess">
+  <meta name="twitter:app:id:ipad" content="1196128038">
+  <meta name="twitter:app:url:ipad" content="recess://">
+  <meta name="twitter:app:name:googleplay" content="Recess">
+  <meta name="twitter:app:id:googleplay" content="com.alexandrugogan.app.recess">
+  <meta name="twitter:app:url:googleplay" content="http://ai.uwaterloo.ca/recess">
+
+  <meta property="og:title" content="Recess Study" />
+  <meta property="og:type" content="university" />
+  <meta property="og:url" content="http://ai.uwaterloo.ca/recess" />
+  <meta property="og:image" content="http://ai.uwaterloo.ca/recess/img/recess-track-your-fitness.png" />
+  <meta property="og:description" content="A research project at the University of Waterloo to measure behavioural change in fitness through social engagement." />
+  <meta property="og:site_name" content="Recess Study" />
+  <meta property="article:published_time" content="2017-03-01T13:37:00+01:00" />
+  <meta property="article:modified_time" content="2017-03-01T13:37:00+01:00" />
+  <meta property="og:country-name" content="Canada">
+
+  <meta itemprop="name" content="Recess Study">
+  <meta itemprop="description" content="A research project at the University of Waterloo to measure behavioural change in fitness through social engagement.">
+  <meta itemprop="image" content="http://ai.uwaterloo.ca/recess/img/recess-track-your-fitness.png">
+
+  <meta name="p:domain_verify" content="f2923b95626b4b64b1b2e662fa57eb77"/>
+
+  <link rel="manifest" href="manifest.json?v=pgrWx6YKv4">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png?v=pgrWx6YKv4">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png?v=pgrWx6YKv4" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png?v=pgrWx6YKv4" sizes="16x16">
+
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg?v=pgrWx6YKv4" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon.ico?v=pgrWx6YKv4">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css"/>
+  <link rel="stylesheet" href="css/smart-app-banner.css"/>
   <link rel="stylesheet" href="css/recess.css"/>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/jquery.easings.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/scrolloverflow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
-
-  <script src="js/recess.js"></script>
+  <!-- <script src="js/smart-app-banner.js"></script> -->
+  <!-- <script src="js/recess.js"></script> -->
 
 
 </head>
 
 <body class="policy">
-<div>
+<div class="agreement">
   <h1>Features of a Smart Phone App to Promote Physical Activity</h1>
   <p>
     Increasing physical activity and reducing sedentary time is important for overall health and wellness.
@@ -74,10 +111,13 @@
   <p>
     This study has been reviewed and received ethics clearance through a University of Waterloo Research Ethics
     Committee (ORE#xxxxx). If you have questions for the Committee contact the Chief Ethics Officer, Office of Research
-    Ethics, at 1-519-888-4567 ext. 36005 or ore-ceo@uwaterloo.ca.
-    <br>
-    Should you have any questions about the study, please contact Pascal Poupart at ppoupart@uwaterloo.ca.
+    Ethics, at <a class="phone" itemprop="telephone" href="tel:15198884567">1-519- 888-4567 ext. 36005</a> or <a
+          itemprop="email" href="mailto:ore-ceo@uwaterloo.ca">ore-ceo@uwaterloo.ca</a>.
   </p>
+  <p itemscope itemtype="http://schema.org/EducationalOrganization">
+    Should you have any questions about the study, please contact <a href="mailto:recess.research.study@gmail.com">recess.research.study@gmail.com</a>.
+  </p>
+
 </div>
 </body>
 </html>
