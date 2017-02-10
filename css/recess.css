@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Responsive Breakpoints
    ========================================================================== */
 /* Sub-section comment block
@@ -29,6 +30,53 @@
 /* SVG
   ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@font-face {
+  font-family: 'recess-icons';
+  src: url("../fonts/recess-icons.eot?gqg4k2");
+  src: url("../fonts/recess-icons.eot?gqg4k2#iefix") format("embedded-opentype"), url("../fonts/recess-icons.ttf?gqg4k2") format("truetype"), url("../fonts/recess-icons.woff?gqg4k2") format("woff"), url("../fonts/recess-icons.svg?gqg4k2#recess-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+i.recess-icons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'recess-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1rem;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.recess-icon-facebook-official:before {
+  content: ""; }
+
+.recess-icon-facebook-square:before {
+  content: ""; }
+
+.recess-icon-facebook:before {
+  content: "🌞"; }
+
+.recess-icon-facebook-f:before {
+  content: "🌞"; }
+
+.recess-icon-instagram:before {
+  content: ""; }
+
+.recess-icon-twitter:before {
+  content: ""; }
+
+.recess-icon-github:before {
+  content: ""; }
+
+.recess-icon-tumblr:before {
+  content: ""; }
+
+.recess-icon-pinterest:before {
+  content: ""; }
+
 ::selection {
   background: #f1c40f;
   text-shadow: none; }
@@ -240,6 +288,12 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(70deg, #e5e8e9 50%, #f1f3f3 50%);
   padding: 2rem 0 0 0; }
 
+.team__content {
+  max-width: 50rem; }
+  @media (min-width: 50rem) {
+    .team__content {
+      margin: 0 auto; } }
+
 .team__headline {
   max-width: 50rem;
   margin: 0 auto; }
@@ -291,301 +345,82 @@ h1, h2, h3, h4, h5, h6 {
     .team-members__member h2.public-health {
       border-color: #007f8a; }
 
-/**
+.info {
+  margin: 0 auto;
+  background-color: #f1f3f3;
+  padding: 2rem 0 0 0; }
 
+.info__content {
+  max-width: 50rem; }
+  @media (min-width: 50rem) {
+    .info__content {
+      margin: 0 auto; } }
 
-.separator {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.section {
-  text-align: center;
-  @include flex('row');
-  justify-content: flex-end;
-
-}
-
-.separator.external {
-  //background-image: url('../svg/source.svg');
-  background-color: $recess_base_contrast_1;
-
-
-
-  @include svg($recess_base_contrast_1, $recess_base_contrast_3, 40, 80);
-
-}
-
-.separator.bright {
-  //background-image: url('../svg/source.svg');
-  @include svg($recess_base_1, $recess_base_2, 80, 30);
-}
-
-.separator.brighter {
-  //background-image: url('../svg/source.svg');
-  @include svg($recess_base_1, $recess_base_1, 30, 0);
-}
-
-
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background-color: $primary_recess;
-}
-
-#menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 40px;
-  z-index: 70;
-  padding: 1rem;
-  margin: 0;
-  @include flex('row');
-  justify-content: flex-end;
-}
-
-.menu__item {
-  padding: 1rem 2rem;
-  color: $recess_base_1;
-
-  a {
-    transition: color 0.5s ease;
-    color: $recess_base_1;
-    text-decoration: none;
-    line-height: 2rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-weight: 500;
-  }
-
-  &.active {
-    a, a:hover, a:focus, a:active, a:visited {
-
-      border-bottom: 0.125rem solid $primary_recess;;
-    }
-  }
-}
-
-.recess-logo {
-  width: 10rem;
-}
-
-.section-title {
-
-}
-
-.section-title__header {
-  @include flex('row');
-  justify-content: center;
-
-  color: $recess_base_1;
-  font-size: 2rem;
-
-  img {
-    height: 3rem;
-    margin-right: -0.5rem;
-  }
-}
-
-.section-title__footer {
-  @include flex('row');
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  a, a:hover, a:focus, a:active, a:visited {
-    color: $primary_recess;
-  }
-
-  i {
-    font-size: 4rem;
-  }
-
-}
-
-.section-title__badges {
-  @include flex('row');
-  justify-content: center;
-}
-
-.section-description {
-  @include flex('row');
-  justify-content: center;
-  color: $recess_base_1;
-  padding: 1rem;
-  line-height: 2rem;
-  span {
-    font-size: 1.2rem;
-    max-width: 40rem;
-  }
-}
-
-.badge {
-  &.apple {
-
-  }
-
-  &.google {
-    width: 154px;
-  }
-}
-
-.fp-viewing-app {
-
-}
-
-.fp-viewing-study .menu__item ,
-.fp-viewing-team .menu__item,
-.fp-viewing-questions .menu__item {
-  a {
-    transition: color 0.5s ease;
-    color: $recess_base_contrast_1;
-  }
-
-}
-
-.study {
-  //background-color: $nephritis;
-}
-
-.theStudy {
-  padding: 0 0 0 0;
-  //height: 40rem;
-
-  @include flex('row');
-
-}
-
-.team {
-  @include flex('row');
-  background-color: $white;
-}
-
-
-
-p {
-  line-height: 1.4rem;
-}
-
-.description {
-  flex: auto;
-  //background-color: $amethyst;
-  width: 10rem;
-  min-width: 12rem;
-  h1 {
-    width: 4rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.25rem solid $primary_recess;
-    color: $recess_base_contrast_2;
-  }
-  .subtitle {
-    font-weight: 700;
-    margin: 0;
-    font-size: 1rem;
-    padding: 1rem 0 0 2rem;
-  }
-  p {
-    padding: 0 2rem 0 2rem;
-    min-width: 14rem;
-    max-width: 14rem;
-    text-align: left;
-    color: $concrete;
-
-  }
-}
-
-.stages {
-  flex: auto;
-  align-self: flex-end;
-  //width: 5rem;
-  max-width: 20rem;
-  background-color: $primary_recess;
-
-  section {
-    color: $recess_base_contrast_2;
-    padding: 2rem;
-    text-align: left;
-  }
-
-}
-
-.preview {
-  //background-color: $amethyst;
-  flex-grow: 1;
-  @include flex('row');
-  justify-content: space-around;
-  img {
-    width: 10rem;
-    @include card(3);
-  }
-}
-
-.theTeam {
-  @include flex('row');
-  //background-color: $alizarin;
-}
-
-.ethics {
-  flex: auto;
-  //background-color: $amethyst;
-  width: 10rem;
-  min-width: 12rem;
-  h1 {
-    width: 4rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.25rem solid $primary_recess;
-    color: $recess_base_contrast_2;
-  }
-  .subtitle {
-    font-weight: 700;
-    margin: 0;
-    font-size: 1rem;
-    padding: 1rem 0 0 2rem;
-  }
-  p {
-    padding: 0 2rem 0 2rem;
-    min-width: 14rem;
-    max-width: 14rem;
-    text-align: left;
-    color: $concrete;
-
-    img {
-      width: 20rem;
-    }
-
-  }
-}
-
-.members {
-  @include flex('row');
-  align-self: flex-end;
-  //width: 5rem;
-  max-width: 40rem;
-  background-color: $recess_base_contrast_2;
-  flex-wrap: wrap;
-  padding: 1rem;
-
-  section {
-    color: $recess_base_3;
-    padding: 1rem;
-    text-align: left;
-    width: 18rem;
-    //background-color: $emerald;
-    height: 8rem;
-  }
-
-}
-
-.policy {
-  background-color: $primary_recess;
+.info__ethics,
+.info__faq {
+  float: left;
   padding: 2rem;
-  div {
-    background-color: $white;
-    padding: 2rem;
+  width: 100%;
+  max-height: 100%;
+  min-height: 100%; }
+  @media (min-width: 600px) {
+    .info__ethics,
+    .info__faq {
+      width: 50%; } }
 
-  }
-}
+.info__ethics {
+  background-color: #f1c40f; }
 
-**/
+.info__faq {
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%; }
+
+.ethics__headline h1 {
+  width: 3rem;
+  padding-left: 0;
+  padding-bottom: 1rem;
+  border-bottom: 0.25rem solid #24242f;
+  color: #24242f;
+  text-align: left; }
+
+.faq__headline h1 {
+  width: 4rem;
+  padding-left: 0rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.25rem solid #f1c40f;
+  color: #24242f;
+  text-align: left; }
+
+.phone {
+  font-weight: 600; }
+
+.footer {
+  background-color: #282834;
+  padding: 2rem; }
+
+.footer__content {
+  max-width: 50rem;
+  color: #e5e8e9;
+  line-height: 2rem; }
+  @media (min-width: 50rem) {
+    .footer__content {
+      margin: 0 auto; } }
+  .footer__content .social-media {
+    width: 1rem;
+    color: #f1c40f;
+    padding: 0 2rem; }
+    .footer__content .social-media i {
+      font-size: 1.4rem;
+      color: #f1c40f;
+      display: inline-block;
+      height: 2rem;
+      vertical-align: middle;
+      line-height: 1.8rem; }
+    .footer__content .social-media a {
+      color: #e5e8e9;
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 2rem; }
+      .footer__content .social-media a:hover {
+        color: #e5e8e9; }

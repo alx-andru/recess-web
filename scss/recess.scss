@@ -14,7 +14,11 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+
+
 }
+
+
 
 fieldset {
   border: 0;
@@ -172,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 50rem;
 
   @media (min-width: 50rem) {
-   margin: 0 auto;
+    margin: 0 auto;
   }
 
   h1 {
@@ -232,7 +236,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0 0 0;
   text-align: center;
 
-
   h1 {
     width: 20rem;
     padding-left: 1rem;
@@ -267,7 +270,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
 .team {
   text-align: center;
   background-color: $primary_recess;
@@ -275,6 +277,16 @@ h1, h2, h3, h4, h5, h6 {
   background: -webkit-linear-gradient(70deg, $recess_base_1 50%, $recess_base_2 50%);
   background: linear-gradient(70deg, $recess_base_1 50%, $recess_base_2 50%);
   padding: 2rem 0 0 0;
+
+}
+
+.team__content {
+  max-width: 50rem;
+
+  @media (min-width: 50rem) {
+    margin: 0 auto;
+  }
+
 }
 
 .team__headline {
@@ -293,11 +305,13 @@ h1, h2, h3, h4, h5, h6 {
 .team__members {
   padding: 2rem;
 }
+
 .waterloo-logo {
   img {
     max-width: 20rem;
   }
 }
+
 .team-members__member {
   text-align: left;
   float: left;
@@ -325,9 +339,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 25%;
   }
 
-
-
-
   h2 {
     width: 3rem;
     height: 4.5rem;
@@ -350,307 +361,123 @@ h1, h2, h3, h4, h5, h6 {
       border-color: $uw_public_health;
     }
 
-
-  }
-
-
-}
-
-/**
-
-
-.separator {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.section {
-  text-align: center;
-  @include flex('row');
-  justify-content: flex-end;
-
-}
-
-.separator.external {
-  //background-image: url('../svg/source.svg');
-  background-color: $recess_base_contrast_1;
-
-
-
-  @include svg($recess_base_contrast_1, $recess_base_contrast_3, 40, 80);
-
-}
-
-.separator.bright {
-  //background-image: url('../svg/source.svg');
-  @include svg($recess_base_1, $recess_base_2, 80, 30);
-}
-
-.separator.brighter {
-  //background-image: url('../svg/source.svg');
-  @include svg($recess_base_1, $recess_base_1, 30, 0);
-}
-
-
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background-color: $primary_recess;
-}
-
-#menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 40px;
-  z-index: 70;
-  padding: 1rem;
-  margin: 0;
-  @include flex('row');
-  justify-content: flex-end;
-}
-
-.menu__item {
-  padding: 1rem 2rem;
-  color: $recess_base_1;
-
-  a {
-    transition: color 0.5s ease;
-    color: $recess_base_1;
-    text-decoration: none;
-    line-height: 2rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-weight: 500;
-  }
-
-  &.active {
-    a, a:hover, a:focus, a:active, a:visited {
-
-      border-bottom: 0.125rem solid $primary_recess;;
-    }
-  }
-}
-
-.recess-logo {
-  width: 10rem;
-}
-
-.section-title {
-
-}
-
-.section-title__header {
-  @include flex('row');
-  justify-content: center;
-
-  color: $recess_base_1;
-  font-size: 2rem;
-
-  img {
-    height: 3rem;
-    margin-right: -0.5rem;
-  }
-}
-
-.section-title__footer {
-  @include flex('row');
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  a, a:hover, a:focus, a:active, a:visited {
-    color: $primary_recess;
-  }
-
-  i {
-    font-size: 4rem;
   }
 
 }
 
-.section-title__badges {
-  @include flex('row');
-  justify-content: center;
-}
-
-.section-description {
-  @include flex('row');
-  justify-content: center;
-  color: $recess_base_1;
-  padding: 1rem;
-  line-height: 2rem;
-  span {
-    font-size: 1.2rem;
-    max-width: 40rem;
-  }
-}
-
-.badge {
-  &.apple {
-
-  }
-
-  &.google {
-    width: 154px;
-  }
-}
-
-.fp-viewing-app {
+.info {
+  margin: 0 auto;
+  background-color: $recess_base_2;
+  padding: 2rem 0 0 0;
 
 }
 
-.fp-viewing-study .menu__item ,
-.fp-viewing-team .menu__item,
-.fp-viewing-questions .menu__item {
-  a {
-    transition: color 0.5s ease;
-    color: $recess_base_contrast_1;
+.info__content {
+  max-width: 50rem;
+
+
+
+  @media (min-width: 50rem) {
+    margin: 0 auto;
   }
 
 }
 
-.study {
-  //background-color: $nephritis;
-}
-
-.theStudy {
-  padding: 0 0 0 0;
-  //height: 40rem;
-
-  @include flex('row');
-
-}
-
-.team {
-  @include flex('row');
-  background-color: $white;
-}
-
-
-
-p {
-  line-height: 1.4rem;
-}
-
-.description {
-  flex: auto;
-  //background-color: $amethyst;
-  width: 10rem;
-  min-width: 12rem;
-  h1 {
-    width: 4rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.25rem solid $primary_recess;
-    color: $recess_base_contrast_2;
-  }
-  .subtitle {
-    font-weight: 700;
-    margin: 0;
-    font-size: 1rem;
-    padding: 1rem 0 0 2rem;
-  }
-  p {
-    padding: 0 2rem 0 2rem;
-    min-width: 14rem;
-    max-width: 14rem;
-    text-align: left;
-    color: $concrete;
-
-  }
-}
-
-.stages {
-  flex: auto;
-  align-self: flex-end;
-  //width: 5rem;
-  max-width: 20rem;
-  background-color: $primary_recess;
-
-  section {
-    color: $recess_base_contrast_2;
-    padding: 2rem;
-    text-align: left;
-  }
-
-}
-
-.preview {
-  //background-color: $amethyst;
-  flex-grow: 1;
-  @include flex('row');
-  justify-content: space-around;
-  img {
-    width: 10rem;
-    @include card(3);
-  }
-}
-
-.theTeam {
-  @include flex('row');
-  //background-color: $alizarin;
-}
-
-.ethics {
-  flex: auto;
-  //background-color: $amethyst;
-  width: 10rem;
-  min-width: 12rem;
-  h1 {
-    width: 4rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.25rem solid $primary_recess;
-    color: $recess_base_contrast_2;
-  }
-  .subtitle {
-    font-weight: 700;
-    margin: 0;
-    font-size: 1rem;
-    padding: 1rem 0 0 2rem;
-  }
-  p {
-    padding: 0 2rem 0 2rem;
-    min-width: 14rem;
-    max-width: 14rem;
-    text-align: left;
-    color: $concrete;
-
-    img {
-      width: 20rem;
-    }
-
-  }
-}
-
-.members {
-  @include flex('row');
-  align-self: flex-end;
-  //width: 5rem;
-  max-width: 40rem;
-  background-color: $recess_base_contrast_2;
-  flex-wrap: wrap;
-  padding: 1rem;
-
-  section {
-    color: $recess_base_3;
-    padding: 1rem;
-    text-align: left;
-    width: 18rem;
-    //background-color: $emerald;
-    height: 8rem;
-  }
-
-}
-
-.policy {
-  background-color: $primary_recess;
+.info__ethics,
+.info__faq {
+  float: left;
   padding: 2rem;
-  div {
-    background-color: $white;
-    padding: 2rem;
 
+  width: 100%;
+  @media (min-width: 600px) {
+    width: 50%;
+  }
+  max-height: 100%;
+  min-height: 100%;
+
+}
+
+.info__ethics {
+  background-color: $primary_recess;
+
+}
+
+.info__faq {
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.ethics__headline {
+  h1 {
+    width: 3rem;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid $recess_base_contrast_2;
+    color: $recess_base_contrast_2;
+    text-align: left;
   }
 }
 
-**/
+
+.faq__headline {
+  h1 {
+    width: 4rem;
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid $primary_recess;
+    color: $recess_base_contrast_2;
+    text-align: left;
+  }
+}
+
+.phone {
+  font-weight: 600;
+}
+
+.footer {
+
+  background-color: $recess_base_contrast_3;
+  padding: 2rem;
+}
+
+.footer__content {
+  max-width: 50rem;
+  color: $recess_base_1;
+  line-height: 2rem;
+  @media (min-width: 50rem) {
+    margin: 0 auto;
+  }
+
+  .social-media {
+    width: 1rem;
+    color: $primary_recess;
+    padding: 0 2rem;
+
+
+    i {
+      font-size: 1.4rem;
+      color: $primary_recess;
+        display: inline-block;
+        height: 2rem;
+        vertical-align: middle;
+        line-height: 1.8rem;
+
+    }
+    a {
+      color: $recess_base_1;
+
+      display: inline-block;
+      font-size: 1rem;
+      line-height:2rem;
+      &:hover {
+        color: $recess_base_1;
+      }
+
+    }
+  }
+
+}
+
+
+
